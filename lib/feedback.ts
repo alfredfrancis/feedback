@@ -243,7 +243,7 @@ export class Feedback {
 
     const data = {
       description: this._form[0].value,
-      screenshot: this._screenshotCanvas.toDataURL()
+      screenshot: this._screenshotCanvas.toDataURL("image/jpg")
     };
 
     fetch(this._options.endpoint, {
